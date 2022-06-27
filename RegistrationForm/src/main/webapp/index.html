@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+
+<style>
+.Contanier{
+width: 30%;
+border: 1px solid;
+margin: auto;
+padding: 18px;
+font-size: 20px;
+}
+
+#myform table tr td input{
+font-size: 20px;
+}
+
+</style>
+
+</head>
+<body>
+<div class = "Contanier">
+<h1>Registration Form</h1>
+
+<form id="myform" action = "Registration" method = "post">
+<table>
+<tr>
+<td>Name: </td>
+<td ><input type = "text" name = "name" placeholder = "Enter Your Name"> </td>
+</tr>
+
+
+<tr>
+<td>Password: </td>
+<td><input type = "password" name = "password" placeholder = "Enter Your Password"> </td>
+</tr>
+
+
+<tr>
+<td>Email: </td>
+<td><input type = "email" name = "email" placeholder = "example123@gmail.com"> </td>
+</tr>
+
+<tr>
+<td>Select Gender: </td>
+<td><input type = "radio" name = "gender" value = "male"> Male &nbsp; &nbsp; <input type = "radio" name = "gender" value = "female"> Female </td>
+</tr>
+
+<tr>
+<td>Select Course: </td>
+<td> <select name = "course">
+<option value = "">---Select Course---</option>
+<option value = "java">Adv. Java</option>
+<option value = "python">Python</option>
+<option value = "html">Html</option>
+<option value = "c++">C++</option>
+</select>
+</td>
+
+<tr align="right">
+<td><input type = "checkbox" name = "terms"></td>
+<td>Agree terms and conditions</td>
+</tr>
+
+<tr>
+<td align="right"><button type = "submit">Submit</button></td>
+<td><button type = "reset">Reset</button></td>
+</tr>
+
+</table>
+</form>
+</div>
+
+</body>
+</html>
